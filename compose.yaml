@@ -11,7 +11,7 @@ services:
       context: .
     # bind host to container to persist file changes
     volumes:
-      - ..:/devcontainer-w-compose:cached
+      - .:/devcontainer-w-compose:cached
     # enable allocation of terminal to container
     tty: true
     # keep standard input open on container
