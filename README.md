@@ -44,7 +44,7 @@
 
 This project serves as an example of how to setup a development container. A Development Container (or Dev Container for short) allows you to use a container as a full-featured development environment. It can be used to run an application, to separate tools, libraries, or runtimes needed for working with a codebase, and to aid in continuous integration and testing. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of supporting tools and editors.
 
-[This devcontainer](.devcontainer), is built IAW the [dev containers specification](https://containers.dev/implementors/spec/) and tailored for a build environment that runs on alpine linux and python with the cowsay library as an additional depenency for demonstration purposes. Additionally, the devcontainer has git for version control and several extensions installed for Visual Studio Code as development utilities.
+[This devcontainer](.devcontainer), is built IAW the [dev containers specification](https://containers.dev/implementors/spec/) and tailored for a build environment that runs on alpine linux and python with the cowsay library as an additional dependency for demonstration purposes. Additionally, the devcontainer has git for version control and several extensions installed for Visual Studio Code as development utilities.
 
 <!-- PREREQUISITES -->
 ## Prerequisites
@@ -66,7 +66,7 @@ Doing so will start the build process for the devcontainer. Visual Studio will e
 
 ![Operating System Information](imgs/osInfo.png)
 
-The `src` folder includes a python file, ``main.py``, that can be run to validate that the `cowsay` dependency included in our `.devcontainer/requirements.txt` file was added correctly.
+The `src` folder includes a python file, ``main.py``, that can be run to validate that the `cowsay` dependency included in our `requirements.txt` file was added correctly.
 
 To validate that requirements were installed correctly, run:
 ```sh
