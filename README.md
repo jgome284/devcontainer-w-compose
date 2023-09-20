@@ -8,7 +8,7 @@
   <h3 align="center">Foreword</h3>
 
   <p align="center">
-    python:3.9-alpine development container setup with Docker compose for use on Visual Studio.
+    python:3.9-alpine development container setup with docker-compose for use on Visual Studio.
     <br />
     <a href="https://github.com/jgome284/devcontainer-w-compose/issues">Report Bug</a>
     ·
