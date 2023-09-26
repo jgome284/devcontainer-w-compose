@@ -54,7 +54,29 @@ To start, you need to have Docker Engine and Docker Compose on your machine. You
 
 Additionally, this devcontainer is meant to work on Visual Studio Code. You should have it installed along with the [remote development pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) to enable the IDE's devcontainers functionality.
 
-All dependencies will be handled during the build process with Docker.
+Create a `config.sh` file to host your git configuration settings. This file is run as a `postCreateCommand` as specified in `.devcontainer.json`. The format of this file should looks as such:
+```sh
+#!/bin/ash
+echo "" # add white space for formatting
+
+echo "Configuring Git..."
+echo "-----------------------------------------"
+# config username and print for confirmation
+git config --global user.name "YOUR NAME" 
+echo -n "User: " 
+git config --global user.name
+# config email and print for confirmation
+git config --global user.email "YOUR EMAIL" 
+echo -n "Email: " 
+git config --global user.email
+echo "" # add white space for formatting
+
+echo "Displaying OS Info..."
+echo "-----------------------------------------"
+cat /etc/os-release
+echo "" # add white space for formatting
+```
+All dependencies within your `requirements.txt` file will be handled during the build process with Docker.
 
 <!-- GETTING STARTED -->
 ## Getting started
